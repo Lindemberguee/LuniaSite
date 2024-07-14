@@ -1,0 +1,20 @@
+.card {
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 16rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-background);
+  animation: fadeIn 0.5s ease-in-out;
+  background-color: #1C171D;
+}
+
+.rank {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounceIn 0.5s ease-in-out;
+}

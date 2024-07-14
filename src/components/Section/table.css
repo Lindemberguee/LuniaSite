@@ -1,0 +1,13 @@
+/* table.css */
+
+
+.table-main th, .table-main td {
+  padding: 0.75rem;
+  border: 1px solid #056aee00; /* Adicionar borda sólida */
+}
+
+
+/* Alterar a cor das linhas que ficam abaixo de cada linha da tabela */
+.table-main tr:not(:last-child) td {
+  border-bottom-color: #181A20; /* Alterar a cor das linhas para vermelho */
+}

@@ -1,0 +1,145 @@
+/* src/styles.css */
+
+/* Custom Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in-up {
+  animation: slideInUp 0.5s ease-in-out;
+}
+
+.bounce-in {
+  animation: bounceIn 1s ease;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Card Styles */
+.card {
+  background-color: #1C171D; /* bg-card-background */
+  color: white;
+  border-radius: 0.75rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  padding: 1rem; /* p-4 */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta o tamanho em 5% */
+}
+
+.card-header {
+  background-color: #e94560; /* bg-card-leaderboard-secundary */
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem; /* rounded-md */
+}
+
+.card-footer {
+  background-color: #272A30; /* bg-card-leaderboard */
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0 0 0.75rem 0.75rem; /* rounded-b-lg */
+}
+
+.bg-card-leaderboard-secundary {
+  background-color: #e94560;
+}
+
+.bg-card-leaderboard {
+  background-color: #272A30;
+}
+
+
+/* SectioImagem */
+
+/* style.css */
+
+.group:hover .transition-transform {
+  transform: scale(1.05);
+}
+
+.group:hover .transition-opacity {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0 !important;
+    margin-top: 1rem !important;
+  }
+}
