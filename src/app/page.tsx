@@ -5,6 +5,7 @@ import Menu from "@/components/Header/Menu";
 import BoxCharacters from "@/components/OverView/Box";
 import SectionImages from "@/components/Section/SectionImages";
 import Section from "@/components/Section/SectionTable";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (
