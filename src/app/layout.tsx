@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -34,7 +35,10 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
       </Head>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
